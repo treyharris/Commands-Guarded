@@ -1,0 +1,13 @@
+Changes
+Guarded.pm
+Makefile.PL
+MANIFEST
+README
+t/01use.t
+t/02nullop.t
+t/03trivial.t
+t/04exception.t
+t/05sanity.t
+t/06rollback.t
+t/07doforeach.t
+META.yml                                Module meta-data (added by MakeMaker)
