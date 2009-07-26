@@ -4,9 +4,9 @@ use ExtUtils::MakeMaker;
 # the contents of the Makefile that is written.
 WriteMakefile(
     NAME              => 'Commands::Guarded',
-    VERSION_FROM      => 'Guarded.pm', # finds $VERSION
+    VERSION_FROM      => 'lib/Commands/Guarded.pm', # finds $VERSION
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
-      (ABSTRACT_FROM  => 'Guarded.pm', # retrieve abstract from module
+      (ABSTRACT_FROM  => 'lib/Commands/Guarded.pm', # retrieve abstract from module
        AUTHOR         => 'Trey Harris <treyharris@gmail.com>') : ()),
 );

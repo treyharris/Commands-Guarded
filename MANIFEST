@@ -1,7 +1,8 @@
 Changes
-Guarded.pm
+lib/Commands/Guarded.pm
 Makefile.PL
-MANIFEST
+MANIFEST			This list of files
+META.yml
 README
 t/01use.t
 t/02nullop.t
@@ -10,4 +11,3 @@ t/04exception.t
 t/05sanity.t
 t/06rollback.t
 t/07doforeach.t
-META.yml                                Module meta-data (added by MakeMaker)
