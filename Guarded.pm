@@ -1023,6 +1023,10 @@ it would be relatively tough--which is why it's not documented.
 
 =back
 
+=head1 SOURCE REPOSITORY
+
+The source is available via git at L<http://github.com/treyharris/Text-FormatTable/>.
+
 =head1 ACKNOWLEDGMENTS
 
 I would like to thank Damian Conway for his invaluable assistance on
