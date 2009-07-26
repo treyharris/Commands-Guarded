@@ -1,0 +1,8 @@
+\B\.git\b
+^\.gitignore$
+^MANIFEST\.
+^Makefile$
+^blib/
+^#.*#$
+^\.#
+^Commands-Guarded-
