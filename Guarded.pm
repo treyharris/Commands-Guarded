@@ -194,7 +194,7 @@ sub do {
       }
       $self->_check_sanity(@_);
       if ($self->ensure_block->(@_)) {
-	 _diag "Step" . $self->name(@_) . " succeeded\n";
+	 _diag "Step " . $self->name(@_) . " succeeded\n";
 	 return @returns;
       }
       _fail "Step " . $self->name(@_) . " failed";
