@@ -111,10 +111,11 @@ sub new {
    foreach my $block (@blocks) {
       $block->add($self);
    }
+   if (not exists $self->{using_block}) {
+       $self->{using_block} = sub { 1 };
+   }
    croak "Missing 'ensure' block for step"
-     unless exists $self->{ensure_block};
-   croak "Missing 'using' block for step"
-     unless exists $self->{using_block};
+       unless exists $self->{ensure_block};
    return $self;
 }
 
@@ -302,7 +303,8 @@ This module implements a deterministic, rectifying variant on
 Dijkstra's guarded commands.  Each named step is passed two blocks: an
 C<ensure> block that defines a test for a necessary and sufficient
 condition of the step, and a C<using> block that will cause that
-condition to obtain.
+condition to obtain.  (If the C<using> block is ommitted, the step
+acts as a simple assertion.)
 
 If C<step> is called in void context (i.e., is not assigned to
 anything or used as a value), the step is run immediately, as in this
@@ -413,6 +415,10 @@ run, it will throw an exception.
 Defines the code to affect the condition in C<ensure>.  If the
 containing step's C<ensure> block returns a false value, BLOCK will be
 run.
+
+If the C<using> block is omitted, the step will work as a simple
+assertion: if the C<ensure> block returns a false value, an exception
+will be thrown.
 
 =item sanity BLOCK
 
@@ -1013,8 +1019,8 @@ different arguments using C<do(ARGS)>.
 
 =item *
 
-Rational behavior when C<ensure> or (and?) C<using> are omitted.
-Today it just throws an error.
+Rational behavior when C<ensure> is omitted.  Today it just throws an
+error.
 
 =item *
 
