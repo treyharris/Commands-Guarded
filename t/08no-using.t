@@ -1,5 +1,5 @@
 use Test;
-BEGIN { plan tests => 1 };
+BEGIN { plan tests => 3 };
 use Commands::Guarded qw(:step verbose);
 
 verbose(0);
