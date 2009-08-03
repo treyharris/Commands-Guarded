@@ -11,3 +11,4 @@ t/04exception.t
 t/05sanity.t
 t/06rollback.t
 t/07doforeach.t
+t/08no-using.t

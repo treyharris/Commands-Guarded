@@ -40,7 +40,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} });
 
 our @EXPORT = ( @{ $EXPORT_TAGS{'default'}} );
 
-our $VERSION = '0.01';
+our $VERSION = '1.0';
 
 # A constructor that's exported (horrors!) -- everything starts here
 
@@ -1048,7 +1048,7 @@ Trey Harris, E<lt>treyharris@gmail.comE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2004 by Trey Harris
+Copyright 2004-2009 by Trey Harris
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 
