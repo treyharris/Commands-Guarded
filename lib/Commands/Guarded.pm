@@ -1031,7 +1031,7 @@ it would be relatively tough--which is why it's not documented.
 
 =head1 SOURCE REPOSITORY
 
-The source is available via git at L<http://github.com/treyharris/Text-FormatTable/>.
+The source is available via git at L<http://github.com/treyharris/Commands-Guarded/>.
 
 =head1 ACKNOWLEDGMENTS
 
