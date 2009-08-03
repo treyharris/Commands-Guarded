@@ -1,5 +1,8 @@
 Revision history for Perl extension Commands::Guarded.
 
+1.01  Monday 03 Aug 2009
+        - Corrected the github URL listed in the docs.
+
 1.0   Monday 03 Aug 2009
         - using block no longer required.  When omitted, a step
           becomes a simple assertion

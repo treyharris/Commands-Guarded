@@ -40,7 +40,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} });
 
 our @EXPORT = ( @{ $EXPORT_TAGS{'default'}} );
 
-our $VERSION = '1.0';
+our $VERSION = '1.01';
 
 # A constructor that's exported (horrors!) -- everything starts here
 

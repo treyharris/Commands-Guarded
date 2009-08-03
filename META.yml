@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Commands-Guarded
-version:             1.0
+version:             1.01
 abstract:            Better scripts through guarded commands
 license:             perl
 author:              
